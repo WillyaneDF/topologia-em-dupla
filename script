@@ -1,0 +1,102 @@
+SCRIPT SWITCH 1
+
+enable
+configure terminal
+hostname SW-01
+enable secret WILLYANE*enable
+line console 0
+password WILLYANE*console
+login
+exit
+ip domain-name 1rede.local
+crypto key generate rsa general-key modulus 1024
+line vty 0 15
+transport input ssh
+password WILLYANE*vty
+login
+exit
+interface vlan 1
+ip address 192.168.0.254 255.255.255.0
+no shutdown
+exit
+service password-encryption 
+ip default-gateway 192.168.0.1
+username willyane privilege 15 secret senai
+line vty 0 15 
+login local
+exit
+line console 0
+login local
+exit
+exit
+wr
+
+__________________________________________________________________________________________________________
+
+
+SCRIPT SWITCH 2
+
+enable
+configure terminal
+hostname SW-02
+enable secret WILLYANE*enable
+line console 0
+password WILLYANE*console
+login
+exit
+ip domain-name 1rede.local
+crypto key generate rsa general-key modulus 1024
+line vty 0 15
+transport input ssh
+password WILLYANE*vty
+login
+exit
+interface vlan 1
+ip address 172.16.255.254 255.255.0.0
+no shutdown
+exit
+service password-encryption
+ip default-gateway 172.16.0.1
+username willyane privilege 15 secret senai
+line vty 0 15 
+login local
+exit
+line console 0
+login local
+exit
+exit
+wr
+
+_____________________________________________________________________________________________________________
+
+ROUTER
+
+enable
+configure terminal
+hostname RT-01
+enable secret WILLYANE*enable
+line console 0
+password WILLYANE*console
+login
+exit
+ip domain-name 1rede.local
+crypto key generate rsa general-key modulus 1024
+line vty 0 15
+transport input ssh
+password WILLYANE*vty
+login
+exit
+interface gigabitethernet 0/0
+ip address 192.168.0.1 255.255.255.0
+no shutdown
+exit
+interface gigabitethernet 0/1
+ip address 172.16.0.1 255.255.0.0
+no shutdown
+exit
+service password-encryption
+exit
+wr
+
+
+
