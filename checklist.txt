@@ -1,0 +1,55 @@
+1ºConfigurar os IP's nos computadores
+
+PC-01 
+IP 192.168.0.10
+Máscara: 255.255.255.0
+gateway: 192.168.0.1
+
+PC-02
+IP 172.16.0.10
+Máscara: 255.255.0.0
+gateway:172.16.0.1
+
+
+___________________________________________________________
+
+SWITCH 1
+
+1ºAlterar o nome dos switchs
+2º Configurar senha da Enable
+3º Configurar senha na Console
+4º colocar a rede em um domínio
+5º Ativar o SSH / chave de 1024 bits
+6º Configurar senha na VTY
+8ºConfigurar IP e máscara
+9º Criptografar todas as senhas
+10ºAdicionar gateway
+
+
+___________________________________________________________
+
+SWITCH 2
+
+1ºAlterar o nome dos switchs
+2º Configurar senha da Enable
+3º Configurar senha na Console
+4º colocar a rede em um domínio
+5º Ativar o SSH / chave de 1024 bits
+6º Configurar senha na VTY
+8ºConfigurar IP e máscara
+9º Criptografar todas as senhas
+10ºAdicionar gateway
+____________________________________________________________
+
+ROUTER
+
+1ºAlterar o nome dos switchs
+2º Configurar senha da Enable
+3º Configurar senha na Console
+4º colocar a rede em um domínio
+5º Ativar o SSH / chave de 1024 bits
+6º Configurar senha na VTY
+7º Entrar nas portas corretas e : Configurar IP e máscara
+8º Criptografar todas as senhas
+9ºAdicionar gateway
+
