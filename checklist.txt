@@ -51,5 +51,4 @@ ROUTER
 6º Configurar senha na VTY
 7º Entrar nas portas corretas e : Configurar IP e máscara
 8º Criptografar todas as senhas
-9ºAdicionar gateway
 
