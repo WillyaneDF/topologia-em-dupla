@@ -1,5 +1,5 @@
 ﻿#Topologia em Dupla
 
-![](./Captura.png)
+![](./Captura.Png)
 
 Mensagem: Essa pasta foi criada para armazenar a Atividade desenvolvida em Dupla
